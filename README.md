@@ -10,16 +10,16 @@ This code applies information theoretic analysis to the Glioma Differentiation
 Network models described by [Sun et al. 2016]:
 
 1. Additive Noise (AN) model: Ito SDEs with constant/additive noise terms
-    CT doses = {0, 5, 7.5, 10} (ng/ml)
-    noise intensities = {0.1, 1, 5, 10} (%)
+    * CT doses = {0, 5, 7.5, 10} (ng/ml)
+    * noise intensities = {0.1, 1, 5, 10} (%)
 2. Chemical Langevin Equation (CLE) model: Ito SDEs with multiplicative noise terms
-    CT doses = {0, 5, 7.5, 10} (ng/ml)
-    noise levels = {LL, HL, LH, HH} (intrinsic noise, extrinsic noise)
+    * CT doses = {0, 5, 7.5, 10} (ng/ml)
+    * noise levels = {LL, HL, LH, HH} (intrinsic noise, extrinsic noise)
 3. Chemical Langevin Equation (CLE-) model with cyclin D1 feedback inhibition:
     This is the same as the CLE model, but with parameter "K6a" multiplied by 10 to
     mimic cyclin D1 positive feedback inhibition
-    CT doses = {0, 5, 7.5, 10} (ng/ml)
-    noise levels = {LL, HL, LH, HH} (intrinsic noise, extrinsic noise)
+    * CT doses = {0, 5, 7.5, 10} (ng/ml)
+    * noise levels = {LL, HL, LH, HH} (intrinsic noise, extrinsic noise)
     
     
 #### Noise Setting Values for Intrinsic/Extrinsic Noise

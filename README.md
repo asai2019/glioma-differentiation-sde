@@ -3,7 +3,7 @@
 ***
 ### Overview
 This repository contains Matlab code to analyze glioma differentiation therapy from an information-theoretic perspective, as part of a publication entitled "Exploring the Information Transmission Properties of Noise-induced Dynamics:
-Application to Glioma Differentiation", submitted to BMC Bioinformatics. The files in this repository are partitioned into several experiments meant to quantify the information value of various 
+Application to Glioma Differentiation", submitted to BMC Bioinformatics. The files in this repository are partitioned into several experiments meant to quantify the information value of various permutations of the glioma differentiation pathway. 
 
 ### Model Descrptions
 This code applies information theoretic analysis to the Glioma Differentiation 
@@ -29,11 +29,11 @@ L       |         0.001
 H       |         0.1
 
 #### Simulation conditions:
-Number of Signals: 4 CT doses * 4 noise settings = 16 distinct signals
-Number of cells: 500
-Duration of simulation: 48 hours
-Timestep: 0.01 hours
-Resolvable timestep: 1 hour
+* Number of Signals: 4 CT doses x 4 noise settings = 16 distinct signals
+* Number of cells: 500
+* Duration of simulation: 48 hours
+* Timestep: 0.01 hours
+* Resolvable timestep: 1 hour
 
 ### Experiments
 Experiment | Description

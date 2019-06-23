@@ -35,7 +35,7 @@ Resolvable timestep: 1 hour
 ### Experiments
 Experiment | Description
 --------- | -----------
-* |  Simulate GFAP levels for 500 simulated cells corresponding to 16 distinct signals, for AN, CLE, and CLE- models
+0 |  Simulate GFAP levels for 500 simulated cells corresponding to 16 distinct signals, for AN, CLE, and CLE- models
 1 |  Compare differentiation potential vs entropy for different noise intensities of AN model 
 2 |  Compute heatmaps for summary descriptors (AUC, max response, max fold change) for combinations
     of CT dose and noise

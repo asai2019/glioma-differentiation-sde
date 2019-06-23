@@ -14,19 +14,21 @@ Network models described by [Sun et al. 2016]:
     noise intensities = {0.1, 1, 5, 10} (%)
 2. Chemical Langevin Equation (CLE) model: Ito SDEs with multiplicative noise terms
     CT doses = {0, 5, 7.5, 10} (ng/ml)
-    noise levels = {LL, HL, LH, HH} (intrinsic noise, extrinsic noise)*
+    noise levels = {LL, HL, LH, HH} (intrinsic noise, extrinsic noise)
 3. Chemical Langevin Equation (CLE-) model with cyclin D1 feedback inhibition:
     This is the same as the CLE model, but with parameter "K6a" multiplied by 10 to
     mimic cyclin D1 positive feedback inhibition
     CT doses = {0, 5, 7.5, 10} (ng/ml)
-    noise levels = {LL, HL, LH, HH} (intrinsic noise, extrinsic noise)* 
-    *[Noise Setting Values for Intrinsic/Extrinsic Noise]*
-    Setting | Standard Deviation of Intrinsic/Extrinsic Noise
-    ---------------------------------------------------------
-       L                0.001
-       H                0.1
-----------------------------
-Simulation conditions:
+    noise levels = {LL, HL, LH, HH} (intrinsic noise, extrinsic noise)
+    
+    
+#### Noise Setting Values for Intrinsic/Extrinsic Noise
+Setting | Standard Deviation of Intrinsic/Extrinsic Noise
+--------|------------------------------------------------
+L       |         0.001
+H       |         0.1
+
+#### Simulation conditions:
 Number of Signals: 4 CT doses * 4 noise settings = 16 distinct signals
 Number of cells: 500
 Duration of simulation: 48 hours
@@ -44,12 +46,11 @@ Experiment | Description
 5 |  Compute channel capacity for AN, CLE, CLE- model for raw and fold-transformed datasets 
 6 |  Compute channel capacity for CLE model when asymmetric sampling (balanced, greedy)
 6a | Balanced sampling: sample equally from each of d subintervals in time domain with maximum variance
-6b | Greedy sampling: sample d time points with maximum variance from entire time domain 
+6b | Greedy sampling: sample **d** time points with maximum variance from entire time domain 
 7 |  Compute channel capacity for CLE model when clustering response dynamics, and consider only terminally differentiated cells
 7a | Terminally differentiated: cell's GFAP value >= 0.8 (differentiation threshold) at end of simulation
-7b | Clustering response dynamics: apply k-means clustering, with k=3, to entire GFAP profiles for all cells, corresponding to each signal, and compute channel capacity separately for each of the 3 clusters
-8 | Compute channel capacity for CLE model when applying principal components analysis to identify d uncorrelated components
-      identified from (z-standardized) time series data (d = 1,...,10). This experiment identifies the theoretical limits per se of achieving            optimal information transfer by removing as much correlation as possible, reducing the effects of extrinsic noise in       propagating dependent noise throughout dynamics.
+7b | Clustering response dynamics: apply k-means clustering, with **k**=3, to entire GFAP profiles for all cells, corresponding to each signal, and compute channel capacity separately for each of the 3 clusters
+8 | Compute channel capacity for CLE model when applying principal components analysis to identify **d** uncorrelated components identified from (z-standardized) time series data (d = 1,...,10). This experiment identifies the theoretical limits *per se* of achieving optimal information transfer by removing as much correlation as possible, reducing the effects of extrinsic noise in       propagating dependent noise throughout dynamics.
 
 
 

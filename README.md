@@ -12,10 +12,10 @@ Network models described by [Sun et al. 2016]:
 1. Additive Noise (AN) model: Ito SDEs with constant/additive noise terms
     CT doses = {0, 5, 7.5, 10} (ng/ml)
     noise intensities = {0.1, 1, 5, 10} (%)
-(2) Chemical Langevin Equation (CLE) model: Ito SDEs with multiplicative noise terms
+2. Chemical Langevin Equation (CLE) model: Ito SDEs with multiplicative noise terms
     CT doses = {0, 5, 7.5, 10} (ng/ml)
     noise levels = {LL, HL, LH, HH} (intrinsic noise, extrinsic noise)*
-(3) Chemical Langevin Equation (CLE-) model with cyclin D1 feedback inhibition:
+3. Chemical Langevin Equation (CLE-) model with cyclin D1 feedback inhibition:
     This is the same as the CLE model, but with parameter "K6a" multiplied by 10 to
     mimic cyclin D1 positive feedback inhibition
     CT doses = {0, 5, 7.5, 10} (ng/ml)
@@ -42,9 +42,9 @@ Experiment | Description
 3 |  Compute heatmaps for summary descriptors for CLE- model
 4 |  Compute channel (or information transmission) capacity for summary descriptors for AN, CLE, CLE- models
 5 |  Compute channel capacity for AN, CLE, CLE- model for raw and fold-transformed datasets 
-6 |  Compute channel capacity for CLE model when asymmetric sampling(balanced, greed)
-    a. Balanced sampling: sample equally from each of d subintervals in time domain with maximum variance
-    b. Greedy sampling: sample d time points with maximum variance from entire time domain 
+6 |  Compute channel capacity for CLE model when asymmetric sampling (balanced, greedy)
+a. Balanced sampling: sample equally from each of d subintervals in time domain with maximum variance
+b. Greedy sampling: sample d time points with maximum variance from entire time domain 
 7 |  Compute channel capacity for CLE model when clustering response dynamics, and consider only terminally differentiated cells
     (A) Terminally differentiated: cell's GFAP value >= 0.8 (differentiation threshold) at end of simulation
     (B) Clustering response dynamics: apply k-means clustering, with k=3, to entire GFAP profiles for all cells, 

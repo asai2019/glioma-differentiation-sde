@@ -37,8 +37,7 @@ Experiment | Description
 --------- | -----------
 0 |  Simulate GFAP levels for 500 simulated cells corresponding to 16 distinct signals, for AN, CLE, and CLE- models
 1 |  Compare differentiation potential vs entropy for different noise intensities of AN model 
-2 |  Compute heatmaps for summary descriptors (AUC, max response, max fold change) for combinations
-    of CT dose and noise
+2 |  Compute heatmaps for summary descriptors (AUC, max response, max fold change) for combinations of CT dose and noise
 3 |  Compute heatmaps for summary descriptors for CLE- model
 4 |  Compute channel (or information transmission) capacity for summary descriptors for AN, CLE, CLE- models
 5 |  Compute channel capacity for AN, CLE, CLE- model for raw and fold-transformed datasets 
@@ -49,7 +48,7 @@ Experiment | Description
     (A) Terminally differentiated: cell's GFAP value >= 0.8 (differentiation threshold) at end of simulation
     (B) Clustering response dynamics: apply k-means clustering, with k=3, to entire GFAP profiles for all cells, 
         corresponding to each signal
-8 | ompute channel capacity for CLE model when applying principal components analysis to identify d uncorrelated components
+8 | Compute channel capacity for CLE model when applying principal components analysis to identify d uncorrelated components
       identified from (z-standardized) time series data (d = 1,...,10). This experiment identifies the theoretical limits per se of achieving            optimal information transfer by removing as much correlation as possible, reducing the effects of extrinsic noise in       propagating dependent noise throughout dynamics.
 
 

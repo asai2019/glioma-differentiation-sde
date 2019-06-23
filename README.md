@@ -42,7 +42,8 @@ Experiment | Description
 3 |  Compute heatmaps for summary descriptors for CLE- model
 4 |  Compute channel (or information transmission) capacity for summary descriptors for AN, CLE, CLE- models
 5 |  Compute channel capacity for AN, CLE, CLE- model for raw and fold-transformed datasets 
-6 |  Compute channel capacity for CLE model when asymmetric sampling (balanced, greedy)..a. Balanced sampling: sample equally from each of d subintervals in time domain with maximum variance
+6 |  Compute channel capacity for CLE model when asymmetric sampling (balanced, greedy)
+..a. Balanced sampling: sample equally from each of d subintervals in time domain with maximum variance
 ..b. Greedy sampling: sample d time points with maximum variance from entire time domain 
 7 |  Compute channel capacity for CLE model when clustering response dynamics, and consider only terminally differentiated cells
     (A) Terminally differentiated: cell's GFAP value >= 0.8 (differentiation threshold) at end of simulation

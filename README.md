@@ -3,11 +3,11 @@
 ***
 ### Overview
 This repository contains Matlab code to analyze glioma differentiation therapy from an information-theoretic perspective, as part of a publication entitled "Exploring the Information Transmission Properties of Noise-induced Dynamics:
-Application to Glioma Differentiation", submitted to BMC Bioinformatics. The files in this repository are partitioned into several experiments meant to quantify the information value of various permutations of the glioma differentiation pathway. 
+Application to Glioma Differentiation", submitted to BMC Bioinformatics. The files in this repository are partitioned into several experiments meant to quantify the information value of various permutations of the glioma differentiation pathway, described below. 
 
 ### Model Descrptions
 The models described here are stochastic differential equations (**SDEs**). This code applies information theoretic analysis to the Glioma Differentiation 
-Network models described by [Sun et al. 2016]:
+Network models described by [Sun et al. 2016](https://bmcsystbiol.biomedcentral.com/articles/10.1186/s12918-016-0316-x):
 
 1. Additive Noise (**AN**) model: Ito SDEs with constant/additive noise terms
     * CT doses = {0, 5, 7.5, 10} (ng/ml)

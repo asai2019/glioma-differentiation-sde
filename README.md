@@ -40,7 +40,7 @@ Experiment | Description
 --------- | -----------
 0 |  Simulate GFAP levels for 500 simulated cells corresponding to 16 distinct signals, for AN, CLE, and CLE- models
 1 |  Compare differentiation potential vs entropy for different noise intensities of AN model 
-2 |  Compute heatmaps for summary descriptors (AUC, max response, max fold change) for combinations of CT dose and noise
+2 |  Compute heatmaps for summary descriptors (AUC, max response, max fold change) for combinations of CT dose and noise for AN and CLE models
 3 |  Compute heatmaps for summary descriptors for CLE- model
 4 |  Compute channel (or information transmission) capacity for summary descriptors for AN, CLE, CLE- models
 5 |  Compute channel capacity for AN, CLE, CLE- model for raw and fold-transformed datasets 

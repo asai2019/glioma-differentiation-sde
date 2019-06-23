@@ -8,7 +8,8 @@ Application to Glioma Differentiation", submitted to BMC Bioinformatics. The fil
 ### Model Descrptions
 This code applies information theoretic analysis to the Glioma Differentiation 
 Network models described by [Sun et al. 2016]:
-(1) Additive Noise (AN) model: Ito SDEs with constant/additive noise terms
+
+1. Additive Noise (AN) model: Ito SDEs with constant/additive noise terms
     CT doses = {0, 5, 7.5, 10} (ng/ml)
     noise intensities = {0.1, 1, 5, 10} (%)
 (2) Chemical Langevin Equation (CLE) model: Ito SDEs with multiplicative noise terms
@@ -42,8 +43,8 @@ Experiment | Description
 4 |  Compute channel (or information transmission) capacity for summary descriptors for AN, CLE, CLE- models
 5 |  Compute channel capacity for AN, CLE, CLE- model for raw and fold-transformed datasets 
 6 |  Compute channel capacity for CLE model when asymmetric sampling(balanced, greed)
-    (A) Balanced sampling: sample equally from each of d subintervals in time domain with maximum variance
-    (B) Greedy sampling: sample d time points with maximum variance from entire time domain 
+    a. Balanced sampling: sample equally from each of d subintervals in time domain with maximum variance
+    b. Greedy sampling: sample d time points with maximum variance from entire time domain 
 7 |  Compute channel capacity for CLE model when clustering response dynamics, and consider only terminally differentiated cells
     (A) Terminally differentiated: cell's GFAP value >= 0.8 (differentiation threshold) at end of simulation
     (B) Clustering response dynamics: apply k-means clustering, with k=3, to entire GFAP profiles for all cells, 

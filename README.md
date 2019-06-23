@@ -50,7 +50,7 @@ Experiment | Description
 7 |  Compute channel capacity for CLE model when clustering response dynamics, and consider only terminally differentiated cells
 7a | Terminally differentiated: cell's GFAP value >= 0.8 (differentiation threshold) at end of simulation
 7b | Clustering response dynamics: apply k-means clustering, with **k**=3, to entire GFAP profiles for all cells, corresponding to each signal, and compute channel capacity separately for each of the 3 clusters
-8 | Compute channel capacity for CLE model when applying principal components analysis to identify **d** uncorrelated components identified from (z-standardized) time series data (d = 1,...,10). This experiment identifies the theoretical limits *per se* of achieving optimal information transfer by removing as much correlation as possible, reducing the effects of extrinsic noise in       propagating dependent noise throughout dynamics.
+8 | Compute channel capacity for CLE model when applying principal components analysis (**PCA**) to identify **d** uncorrelated components identified from (z-standardized) time series data (d = 1,...,10). This experiment identifies the theoretical limits *per se* of achieving optimal information transfer by removing as much correlation as possible, reducing the effects of extrinsic noise in       propagating dependent noise throughout dynamics.
 
 
 

@@ -29,7 +29,7 @@ L       |         0.001
 H       |         0.1
 
 #### Simulation conditions:
-* Number of Signals: 4 CT doses x 4 noise settings = 16 distinct signals
+* Number of signals: 4 CT doses x 4 noise settings = 16 distinct signals
 * Number of cells: 500
 * Duration of simulation: 48 hours
 * Timestep: 0.01 hours
